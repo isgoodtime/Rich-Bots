@@ -1,4 +1,5 @@
 import discord
+import os
 import datetime
 import openpyxl
 import requests
@@ -212,4 +213,5 @@ async def on_message(message):
             i += 1
 
 
-client.run("NjE3MjY5MTcwNTU5Nzc4ODM2.XWorHA.nT4ngD59xh0ALS83r6cuCs5iJI8")
+access_token = os.environ["BOT_TOKEN]     
+client.run(access_token)
